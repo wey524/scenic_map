@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<link href="css/map.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=YOUR_KEY"></script>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+	<title>哈工大威海校园地图</title>
+</head>
+
+<body>
+	<div id="buttom" style="width:100%;height:52px;">
+		<div id="content">
+			<div class="first"><input id="kw" oninput="getContent(this);" placeholder="输入你要查询的校内地点" onclick="$('#kw').val('')"/></div>
+			<div id="append" style="position: absolute;z-index: 999999"></div>
+		</div>
+	</div>
+	<div id="allmap"></div>
+</body>
+
+</html>
+<script type="text/javascript" src="./js/map.js"></script>
